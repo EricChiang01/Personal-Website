@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  padding: 25px;
-  background-color: white;
-  color: black;
-  font-size: 25px;
-}
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+      transition: all 0.5s ease;
+    }
+css
+Copy code
 .dark-mode {
   background-color: black;
   color: white;
 }
-</style>
+
+.mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mode-toggle:hover {
+  background-color: #222;
+  color: #fff;
+}
+  </style>
 </head>
 <body>
-
-<h2>Toggle Dark/Light Mode</h2>
-<p>Click the button to toggle between dark and light mode for this page.</p>
-
-<button onclick="myFunction()">Toggle dark mode</button>
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
-
+  <button class="mode-toggle" onclick="toggleMode()">Toggle dark mode</button>
+  <h2>Cleaner Text Example</h2>
+  <p>This is a cleaner example of the text that you can use as your own text. It's easy to read and understand.</p>
+  <script>
+    function toggleMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+    }
+  </script>
 </body>
-</html>
+</html> 
