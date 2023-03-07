@@ -114,7 +114,11 @@
     cursor: pointer;
   }
   
-  /* Change the toggle icon when the description is shown */
-  .show + h3::after {
-    content: "-";
-  }
+/* Add a toggle icon to the project titles */
+h3::after {
+  content: "+"; /* use a plus sign as the toggle icon */
+  position: absolute;
+  right: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
