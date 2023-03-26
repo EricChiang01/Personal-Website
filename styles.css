@@ -1,120 +1,136 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   }
-  
+
   body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
-    transition: all 0.5s ease;
-    line-height: 1.6;
+  padding: 25px;
+  background-color: white;
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  line-height: 1.6;
   }
   
   h2, h3 {
-    margin-top: 2rem;
+  margin-top: 2rem;
   }
   
   ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   }
   
   li {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
   }
   
   a {
-    text-decoration: none;
-    color: #222;
+  text-decoration: none;
+  color: #222;
   }
   
   a:hover {
-    color: #444;
+  color: #444;
   }
   
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
   }
   
   nav ul {
-    display: flex;
+  display: flex;
   }
   
   nav li {
-    margin-left: 1rem;
+  margin-left: 1rem;
   }
   
   main {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
   }
   
   footer {
-    margin-top: 4rem;
-    text-align: center;
+  margin-top: 4rem;
+  text-align: center;
   }
   
   .dark-mode {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
   }
-
-    .dark-mode a {
-        color: white;
-    }
+  
+  .dark-mode a {
+  color: white;
+  }
   
   .mode-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #fff;
-    color: #222;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #222;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .mode-toggle:hover {
-    background-color: #222;
-    color: #fff;
+  background-color: #222;
+  color: #fff;
   }
-
-  li {
-    position: relative; /* add this to the li element */
+  
+  /* New dropdown menu styles */
+  .dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  }
+  
+  .dropdown-btn {
+  font-size: 16px;
+  border: none;
+  background: none;
+  color: #222;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease;
+  }
+  
+  .dropdown-btn:hover {
+  transform: scale(1.2);
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  z-index: 1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   .show {
-    display: block !important;
+  display: block !important;
   }
   
   p {
-    display: none; /* hide the project descriptions by default */
-    margin-top: 1rem; /* add some margin to the project descriptions */
+  margin-top: 1rem;
   }
-  
-  /* Add a toggle icon to the project titles */
-  h3::after {
-    content: "+"; /* use a plus sign as the toggle icon */
-    position: absolute;
-    right: 0;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  
-/* Change the toggle icon when the description is shown */
-.show + h3::after {
-  content: "-";
-}
