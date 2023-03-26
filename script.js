@@ -3,20 +3,19 @@ function toggleMode() {
   element.classList.toggle("dark-mode");
 }
 
-// Function to toggle dropdown menu
 function toggleDropdown(event) {
-  const dropdown = event.target.parentNode.nextElementSibling;
-  dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+  const dropdownContent = event.target.nextElementSibling;
+  dropdownContent.classList.toggle("show");
 }
-  
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
   if (!event.target.matches('.dropdown-btn')) {
-    const dropdowns = document.querySelectorAll('.dropdown-content');
-    dropdowns.forEach(dropdown => {
-  if (dropdown.classList.contains('show')) {
-      dropdown.classList.remove('show');
+    const dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      const dropdownContent = dropdowns[i];
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+      }
     }
-    });
   }
 }
