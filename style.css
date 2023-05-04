@@ -10,21 +10,26 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  background-color: #f7f7f7;
 }
 
 /* Style the header */
 header {
-  background-color: #f5f5f5;
-  padding: 20px;
-  border-bottom: 1px solid #e0e0e0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header h1 {
   margin: 0;
-  font-size: 36px;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -35,7 +40,7 @@ nav ul {
 
 nav li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 nav li:last-child {
@@ -54,30 +59,36 @@ nav a {
 nav a:hover {
   background-color: #333;
   color: #fff;
+  border-radius: 4px;
 }
 
 /* Style the main content area */
 main {
   max-width: 800px;
   margin: 40px auto;
-  padding: 40px;
+  padding: 50px;
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
 }
 
 section {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 section h2 {
-  margin-bottom: 20px;
-  font-size: 24px;
+  margin-bottom: 30px;
+  font-size: 2rem;
   font-weight: bold;
   color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 ul li:last-child {
@@ -86,14 +97,50 @@ ul li:last-child {
 
 /* Style the footer */
 footer {
-  background-color: #f5f5f5;
-  padding: 40px;
+  background-color: #fff;
+  padding: 50px;
   border-top: 1px solid #e0e0e0;
   text-align: center;
 }
 
 footer p {
   margin: 0;
-  font-size: 14px;
+  font-size: 1.1rem;
   color: #333;
+  line-height: 1.8;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  main {
+    padding: 30px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 30px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
