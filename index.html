@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <title>Eric's Portfolio</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Computer Science Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
-<body class="dark-mode"> <!-- add class "dark-mode" to body -->
-
+<body>
   <header>
+    <h1>My Computer Science Portfolio</h1>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="about">
+    <section id="about-me">
       <h2>About Me</h2>
-      <p>Hi, I'm Eric Chiang. I'm a recent computer science graduate and this website highlights the projects I've worked on.</p>
+      <p>Insert your personal introduction here.</p>
     </section>
-    
+
     <section id="projects">
       <h2>Projects</h2>
       <ul>
         <li>
-          <div class="dropdown">
-            <h3>Spam Detection Program</h3>
-            <button class="dropdown-btn" onclick="toggleDropdown(event)">▼</button>
-          </div>
-          <div class="dropdown-content">
-            <p>This code demonstrates the practical application of NLP and machine learning techniques for detecting spam messages. 
-              It loads and preprocesses message data, extracts features using CountVectorizer, trains a Naive Bayes classifier, and evaluates its performance using 
-              metrics such as accuracy, precision, recall, and F1-score. Additionally, the code visualizes the most frequent words and sentences in spam messages using bar 
-              charts. Finally, the code prompts user input, preprocesses it, and leverages the trained classifier to predict whether the input is spam or not.</p>
-          </div>
+          <h3>Project Name 1</h3>
+          <p>Description of project 1.</p>
         </li>
         <li>
-          <div class="dropdown">
-            <h3>Snake Game</h3>
-            <button class="dropdown-btn" onclick="toggleDropdown(event)">▼</button>
-          </div>
-          <div class="dropdown-content">
-            <p>Description of project 2.</p>
-          </div>
+          <h3>Project Name 2</h3>
+          <p>Description of project 2.</p>
         </li>
         <li>
-          <div class="dropdown">
-            <h3>URL Shortener</h3>
-            <button class="dropdown-btn" onclick="toggleDropdown(event)">▼</button>
-          </div>
-          <div class="dropdown-content">
-            <p>Description of project 3.</p>
-          </div>
+          <h3>Project Name 3</h3>
+          <p>Description of project 3.</p>
         </li>
       </ul>
     </section>
 
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Language 1</li>
+        <li>Programming Language 2</li>
+        <li>Programming Language 3</li>
+        <li>Technical Skill 1</li>
+        <li>Technical Skill 2</li>
+        <li>Technical Skill 3</li>
+      </ul>
+    </section>
+
+    <section id="contact-me">
+      <h2>Contact Me</h2>
+      <p>You can reach me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; Your Name | My Computer Science Portfolio</p>
+    <p>&copy; 2023 Your Name</p>
   </footer>
-
-  <button class="mode-toggle" onclick="toggleMode()">Toggle dark mode</button>
-  <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
