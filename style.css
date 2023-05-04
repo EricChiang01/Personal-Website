@@ -1,58 +1,58 @@
-/* Reset default margin and padding */
+/* Set some basic styles for the page */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Set box-sizing to border-box for easier layout calculations */
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-/* Set a background color and font for the entire page */
 body {
-  background-color: #f5f5f5;
   font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
 }
 
 /* Style the header */
 header {
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #f8f8f8;
   padding: 20px;
+  border-bottom: 1px solid #ccc;
 }
 
 header h1 {
-  font-size: 2rem;
+  margin: 0;
+  font-size: 36px;
   font-weight: bold;
+  color: #333;
 }
 
 nav ul {
   list-style: none;
-  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 nav li {
+  display: inline-block;
   margin-right: 20px;
 }
 
+nav li:last-child {
+  margin-right: 0;
+}
+
 nav a {
-  text-decoration: none;
+  display: block;
+  padding: 10px;
   color: #333;
-  font-size: 1.2rem;
+  text-decoration: none;
   font-weight: bold;
-  transition: color 0.2s ease-in-out;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #0072C6;
+  background-color: #333;
+  color: #fff;
 }
 
 /* Style the main content area */
@@ -60,8 +60,6 @@ main {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
 }
 
 section {
@@ -69,43 +67,30 @@ section {
 }
 
 section h2 {
-  font-size: 1.8rem;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
-section ul {
-  list-style: none;
-  font-size: 1.2rem;
-}
-
-section ul li {
+ul li {
   margin-bottom: 10px;
 }
 
-section ul li::before {
-  content: "▹ ";
-  color: #0072C6;
-}
-
-section ul li:last-child {
+ul li:last-child {
   margin-bottom: 0;
-}
-
-section ul li a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-section ul li a:hover {
-  color: #0072C6;
 }
 
 /* Style the footer */
 footer {
-  background-color: #fff;
-  text-align: center;
+  background-color: #f8f8f8;
   padding: 20px;
-  margin-top: 40px;
-  box-shadow: 0px -2px 4px rgba(0,0,0,0.2);
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
 }
